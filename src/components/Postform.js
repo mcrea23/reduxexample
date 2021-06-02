@@ -8,6 +8,7 @@ constructor(props) {
     title: '',
     body: ''
   };
+  this.onChnage = this.onChange.bind(this);
 }
 
   render() {
