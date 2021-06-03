@@ -2,7 +2,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-// import { Provider } from 'react-redux';
+import { Provider } from 'react-redux'; //basically the glue for react & redux
 
 import Posts from './components/Posts';
 import PostForm from './components/PostForm';
@@ -12,7 +12,7 @@ import PostForm from './components/PostForm';
 class App extends Component {
   render() {
     return (
-      // <Provider store={store}>
+      <Provider store={store}>
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -22,7 +22,7 @@ class App extends Component {
           <hr />
           <Posts />
         </div>
-      // </Provider>
+      </Provider>
     );
   }
 }
